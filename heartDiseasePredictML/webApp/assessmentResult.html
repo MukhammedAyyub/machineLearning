@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="Designs/logo.png">
+  <title>HealthPredictML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <img src="Designs/logo.png" alt="This is a logo" width="100px" height="60px">
+      <h5 class="nameML p-1"><b><span>HealthPredict</span>ML</b></h5>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Lft side -->
+        <ul class="navbar-nav">
+          <li class="nav-item p-1">
+            <a class="nav-link" aria-current="page" href="index.html"> <img src="Designs/dashboardIcon.png" width="30px"
+                height="30px">Dashboard</a>
+          </li>
+          <li class="nav-item p-1">
+            <a class="nav-link active" href="#"> <img src="Designs/assessments.png" width="30px"
+                height="30px">Assessment</a>
+          </li>
+          <li class="nav-item p-1">
+            <a class="nav-link" href="#"> <img src="Designs/historyIcon.png" width="30px" height="30px"> History</a>
+          </li>
+        </ul>
+
+        <!-- Right side -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item p-1">
+            <a href=""> <button type="button" class="btn btn-light">FAQ's</button> </a>
+          </li>
+          <li class="nav-item p-1">
+            <a href="newAssessment.html"> <button type="button" class="btn btn-primary">New Assessment</button> </a>
+          </li>
+          <li class="nav-item p-1">
+            <img src="Designs/healthIcon.png" width="40px" height="40px">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar's end -->
+
+
+  <!-- Content -->
+  <main class="container py-5">
+
+    <!-- Path -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="index2.html">New Assessment</a></li>
+      </ol>
+    </nav>
+    <!-- Path's end -->
+
+    <!-- Report -->
+    <h4 class="fw-bold">Heart Disease Risk Assessment Results</h4>
+    <div class="container py-5" id="reportContainer">
+      <h2 class="fw-bold mb-2">Heart Disease Risk Assessment Results</h2>
+      <!-- Content will be inserted by JavaScript -->
+    </div> <br>
+    <!-- Report's end -->
+
+    <!-- Risk Score BreakDown -->
+    <canvas id="riskChart" height="200"></canvas>
+    <!-- Risk Score BreakDown's end -->
+
+    <!-- Health Matrix Summary -->
+    <div id="app" class="container my-5"></div>
+    <!-- Health Matrix Summary's end -->
+
+
+
+  </main>
+  <!-- Content's end -->
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <div class="row">
+      <div class="col"> <br>
+        <a href="#">> New Assessment</a> <br>
+        <a href="#">> Dashboard</a> <br>
+        <a href="#">> Assessment</a> <br>
+        <a href="#">> History</a> <br>
+        <a href="#">> FAQ's</a> <br>
+      </div>
+      <div class="col">
+        <p>About Us</p>
+        <p>Fergana Government Technical University</p>
+        <p>Artificial Intelligence</p>
+      </div>
+      <div class="col"> <br>
+        <img src="Designs/healthWhite.png">
+      </div>
+    </div> <br>
+    <p>Povered by MukhammadAyyub</p>
+    <p>© 2025 HealthPredictML. All rights reserved.</p>
+  </footer>
+  <!-- Footer's end -->
+
+  <!-- Sctipts -->
+  <!-- ✅ Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="report.js"></script>
+</body>
+
+</html>

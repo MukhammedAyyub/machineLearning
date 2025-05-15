@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.nameML {
+  color: rgb(193, 28, 28);
+}
+
+span {
+  color: rgb(72, 159, 130);
+}
+
+.stat-card {
+  background-color: #f7f6fe;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.stat-icon {
+  background-color: rgba(124, 58, 237, 0.1); /* purple hint */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.form-select, .form-control {
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+.form-check-input {
+  width: 2.5rem;
+  height: 1.25rem;
+}
+
+.card-custom {
+  background-color: #f4f0ff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: none;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  background-color: #e0d9ff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #5e3dea;
+  margin-bottom: 1rem;
+}
+
+.btn-purple {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #580e9b;
+}
