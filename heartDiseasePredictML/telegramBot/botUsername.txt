@@ -1,2 +1,0 @@
-User name: @HealthPredictML_bot
-Description of bot: AI-powered tool to predict heart disease risk from vital signs. Not a diagnosis.
